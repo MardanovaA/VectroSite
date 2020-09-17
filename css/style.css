@@ -274,7 +274,7 @@ video{
 
 #format{
 	height: 150vh;
-	margin: 2vh 10vw;
+	margin: 2vh 10vw 10vh;
 }
 #format h3{
 	text-align: center;
@@ -294,12 +294,15 @@ video{
 	display: block;
 	margin: 6vh auto;
 }
-.format h4, p{
+.format h4{
 	text-align: center;
 	margin: 2vh auto;
 	line-height: 5vh;
 }
 .format  p{
+	text-align: center;
+	margin: 2vh auto;
+	line-height: 5vh;
 	font-size: 1.3vw;
 	max-width: 95%;	
 }
