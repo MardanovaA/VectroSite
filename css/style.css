@@ -30,6 +30,12 @@ h3 {
 	font-size: 3vw;
 	color: #000;
 }
+h4{
+	font-family: Rubik;
+	font-weight: 500;
+	font-size: 1.5vw;
+	color: black;
+}
 p {
 	font-family: Rubik Light;
 	font-size: 1.5vw;
@@ -249,13 +255,13 @@ video{
 }
 
 #reviews{
-	height: 90vh;
+	height: 80vh;
 }
 
 #reviews h2{
 	text-align:center;
 	color: black;
-	margin-top: 5%;
+	margin-top: 3%;
 	font-weight: 400;
 }
 #reviews h3{
@@ -263,11 +269,12 @@ video{
 }
 
 #format img{
-	width: 10vw;
+	width: 7vw;
 }
 
 #format{
 	height: 150vh;
+	margin: 2vh 10vw;
 }
 #format h3{
 	text-align: center;
@@ -275,4 +282,24 @@ video{
 	color: black;
 	margin: 7% 0 5%;
 	font-weight: 400;
+}
+.format{
+	margin: 3vh auto;
+	background-color: white;
+	border-radius: 10px;
+	height: 60vh;
+	width: 20vw;
+}
+.format img{
+	display: block;
+	margin: 6vh auto;
+}
+.format h4, p{
+	text-align: center;
+	margin: 2vh auto;
+	line-height: 5vh;
+}
+.format  p{
+	font-size: 1.3vw;
+	max-width: 95%;	
 }
