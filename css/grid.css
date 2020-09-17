@@ -1,0 +1,147 @@
+#first_page {
+	display: grid;
+	grid-template-columns: 40% 15% 1fr;
+	grid-template-rows: 1fr 2fr 2fr;
+	grid-template-areas: 
+    "logo navbar navbar"
+    "title title image"
+    "our_courses our_courses image";
+}
+.image{
+	grid-area: image;
+}
+
+#navbar{
+	grid-area: navbar;
+	display: grid;
+	grid-template-columns: 2fr 3fr 2fr 1.7fr 3.5fr;
+	grid-template-rows: 15%;
+	grid-template-areas: 
+    "menu1 menu2 menu3 menu4 butlk"	;
+}
+#menu1{
+	grid-area: menu1;
+}
+#menu2{
+	grid-area: menu2;
+}
+#menu3{
+	grid-area: menu3;
+}
+#menu4{
+	grid-area: menu4;
+}
+#intro {
+	display: grid;
+	grid-template-rows: 0.2fr 1fr 0.9fr 1fr;
+	grid-template-areas: 
+    "choise"
+    "video"
+	"exam"
+	"dots";
+}
+
+#choise{
+	display: grid;
+	grid-area: choise;
+	grid-template-rows: 2fr 1fr;
+}
+.parrent{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+
+	grid-template-areas:
+	"red yellow"
+
+}
+.student{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"yellow red"
+
+}
+#prBut1{
+	position: relative;
+	grid-area: red;
+
+}
+#prBut2{
+	grid-area: yellow;
+}
+#stBut1{
+	grid-area:red;
+}
+#stBut2{
+	grid-area:yellow;
+}
+
+#video{
+	display: grid;
+	grid-area: video;
+	grid-template-rows: 1fr 5fr;
+	grid-template-columns: 1fr 1.5fr;
+	grid-template-areas:
+	"text text"
+	"fox video"
+}
+#Text_Video{
+	grid-area: text;
+}
+#fox1{
+	grid-area: fox;
+}
+#mp4{
+	grid-area: video;
+}
+#exam{
+	grid-area: exam;
+}
+#dots{
+	grid-area: dots;
+	display: grid;
+	grid-template-rows:30vh 1fr;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas:
+	"dotsTitle dotsTitle"
+	"imageFox positive"
+}
+#dotsTitle{
+	grid-area: dotsTitle;
+}
+#imageFox{
+	grid-area:imageFox;
+}
+#positive{
+	grid-area: positive;
+}
+
+
+#format_table{
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 1.5fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+    "format1 format2 format3"
+    "format4 format5 format6";
+}
+
+#format:nth-child(2):nth-child(1){
+	grid-area: format1;
+}
+#format:nth-child(2):nth-child(2){
+    background: #666;
+	grid-area: format2;
+}
+#format:nth-child(2):nth-child(3){
+	grid-area: format3;
+}
+#format:nth-child(2):nth-child(4){
+	grid-area: format4;
+}
+#format:nth-child(2):nth-child(5){
+	grid-area: format5;
+}
+#format:nth-child(2):nth-child(6){
+	grid-area: format6;
+}
