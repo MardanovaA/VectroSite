@@ -1,4 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Rubik:wght@300;500&display=swap);
+:root {
+  --bg-color: #F9EFFE;
+  --fiolet: #7B26AC;
+  --red: rgba(254,214,95,1);
+  --gradient: linear-gradient(90deg, rgba(254,214,95,1) 0%, rgba(254,112,134,1) 100%);
+}
+
 *{
 	padding:0;
 	margin:0;
@@ -7,7 +14,7 @@
 }
 body {
 	font-family: Rubik, Open Sans;
-	background-color: #F9EFFE;
+	background-color: var(--bg-color);
 	color: black;
 	size: contain;
 }
@@ -28,7 +35,7 @@ h3 {
 	font-family: Rubik;
 	font-weight: 300;
 	font-size: 3vw;
-	color: #000;
+	color: black;
 }
 h4{
 	font-family: Rubik;
@@ -43,7 +50,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: white;
 }
 
 button {
@@ -80,9 +87,9 @@ button {
 	margin: 5% 15% 0 5%;
 }
 #butlk{
-	background-color: #7B26AC;
+	background-color: var(--fiolet);
 	grid-area: butlk;
-	margin: -0.5vw .25vw 0 .25vw;
+	margin: -0.4vw .25vw 0 .25vw;
 	/* margin: -2% 1% 0 1%; */
 	height: 5vh;
 	width: 90%;
@@ -98,7 +105,7 @@ button {
 	margin: 0 10%;
 }
 #our_courses{
-	background-color: #7B26AC;
+	background-color: var(--fiolet);
 	grid-area: our_courses;
 	display: center;
 	margin: 5% 0% 0% 43%; 
@@ -222,7 +229,7 @@ video{
 #navbar button:hover{
 	margin-top: -0.5vw;
 	color: white;
-	background-color: #7B26AC;
+	background-color: var(--fiolet);
 	border-radius: 50px;
 	height: 300%;
 	/* width: 90%; */
@@ -283,18 +290,78 @@ video{
 	letter-spacing: -1px;	
 }
 #Test h4{
-	color: #7B26AC;
+	color: var(--fiolet);
 	margin: 1%;
 }
 
 #Test button{
-	background: rgb(254,214,95);
-	background: linear-gradient(90deg, rgba(254,214,95,1) 0%, rgba(254,112,134,1) 100%);
+	background: var(--gradient);
 	height: 10vh;
 	width: 22vw;
 	border-radius: 50px;
 	text-align: center;
 	margin: 20vh 4vw auto auto;
+}
+/* ------------------------------------ */
+
+.container {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 650vh;
+        left: 0;
+        display: none;
+      }
+.okno {
+        width: 60vw;
+        height: 70vh;
+        text-align: center;
+        padding: 10vh 10vw;
+        border: 3px solid var(--fiolet);
+        border-radius: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+		background: var(--gradient);
+      }
+#zatemnenie input{
+	width: 70%;
+}
+#zatemnenie2 input {
+	margin: 0 2vw;
+}
+#inp1{
+	text-align: left;
+	margin: 1vh auto 5vh;
+}
+.container:target {
+	display: block;
+}
+.container a {
+        display: inline-block;
+        border: 2px solid var(--fiolet);
+		border-radius: 10px;
+        color: var(--fiolet);
+        padding: 0 12px;
+        margin: 10px;
+        text-decoration: none;
+        background: var(--bg-color);
+        font-size: 1.5vw;
+        cursor:pointer;
+}
+.okno a:hover {
+	background: var(--red);
+}
+
+.container h3{
+	margin: 2vh auto 8vh;
+}
+.container p{
+	margin: 1vh auto 10vh;
 }
 
 /* ------------------------------------ */
@@ -354,7 +421,7 @@ video{
 }
 
 #Form_form{
-	background-color: #F9EFFE;
+	background-color: var(--bg-color);
 	border-radius: 20px;
 	height: 90vh;
 	width: 30vw;	
@@ -391,14 +458,15 @@ video{
 .form_atribute{
 	border-bottom: 2px black;
 	border-bottom-color: black;
-	margin: 5px 10%;
+	margin: 7% 10%;
 	width: 80%;
 }
-input{
-	background-color: #F9EFFE;
+
+#Form_form .data input{
+	background-color: var(--bg-color);
 	height: 5vh;
 	width: 100%;
-	border-bottom: 20px black;
+	border-bottom:1px solid #978888;
 	color: #978888;
 	font-family: Rubik Light;
 	font-size: 1.2vw;
@@ -409,16 +477,30 @@ input{
 	width: 3vw;
 }
 
-#Form_form button{
-	background-color: #7B26AC;
+#Phone_Me{
+	background-color: var(--fiolet);
 	border-radius: 10px;
 	height: 8%;
-	width: 70%;
-	margin: 8% 15%;	
-}
-
-#Form_form button h4{
-	margin: 0 auto;
+	width: 64%;
+	margin: 8% 18%;	
+	border: 0;
+	outline:none;
 	color: white;
 	letter-spacing: .1vw;
+	font-size: 1.3vw;
+}
+
+
+#Persanal_Data{
+	margin: auto 10% 5vh;
+}
+
+#Persanal_Data p{
+	color: #A0A0A0;
+	font-size: .8vw;
+	text-align: center;
+}
+
+#Persanal_Data a{
+	color: black;
 }
