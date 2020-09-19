@@ -50,6 +50,7 @@ button {
 	background: none;
 	border: 0;
 	border-radius: 50px;
+	outline:none;
 }
 
 /* ------------------------------------ */
@@ -108,9 +109,6 @@ button {
 /* ------------------------------------ */
 .student {
 	display: none;
-	/* visibility: hidden; */
-	/* width: 0; */
-	/* height: 0; */
 }
 
 #choise {
@@ -137,9 +135,6 @@ button {
 	font-size: 24px;
 	color: black;
 }
-
-
-
 
 #choise .student img{
 	transform: scale(-1, -1);
@@ -200,11 +195,15 @@ video{
 
 #dots h2{
 	color: black;
-	margin-bottom: 20%;
+	margin-bottom: 0%;
 	text-align: center;
 	letter-spacing: -1px;
 	font-stretch: condensed;
 	font-size: 35px;
+}
+
+#dots {
+	height: 90vh;
 }
 
 /* ------------------------------------ */
@@ -212,19 +211,12 @@ video{
 #course_div {
 	background-image: url(../images/back3.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 180vh;
+	height: 180vh;
+	margin-bottom: -20vh;
 }
-
-#Test{
-	background-image: url(../images/back4.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-
-#form{
-	background-image: url(../images/back5.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
+#course_div h2{
+	padding: 40vh 0 0 3vw;
 }
 
 #navbar button:hover{
@@ -254,6 +246,8 @@ video{
 	width: 130%;
 }
 
+/* ------------------------------------ */
+
 #reviews{
 	height: 80vh;
 }
@@ -267,6 +261,43 @@ video{
 #reviews h3{
 	font-size: 2vw;
 }
+
+/* ------------------------------------ */
+
+#Test{
+	/* margin-top: -20vh; */
+	height: 60vh;
+	background-image: url(../images/back4.png);
+	background-repeat: no-repeat;
+	background-size: 100% 50vh;
+}
+#Test #Quastion{
+	margin: 28vh auto auto 5vw;
+}
+
+#Test h3{
+	font-family: Open Sans;
+	font-size: 36px;
+	font-weight: 400;
+	color: white;
+	letter-spacing: -1px;	
+}
+#Test h4{
+	color: #7B26AC;
+	margin: 1%;
+}
+
+#Test button{
+	background: rgb(254,214,95);
+	background: linear-gradient(90deg, rgba(254,214,95,1) 0%, rgba(254,112,134,1) 100%);
+	height: 10vh;
+	width: 22vw;
+	border-radius: 50px;
+	text-align: center;
+	margin: 20vh 4vw auto auto;
+}
+
+/* ------------------------------------ */
 
 #format img{
 	width: 7vw;
@@ -305,4 +336,89 @@ video{
 	line-height: 5vh;
 	font-size: 1.3vw;
 	max-width: 95%;	
+}
+
+/* ------------------------------------ */
+
+
+#form{
+	background-image: url(../images/back5.png);
+	background-repeat: no-repeat;
+	background-size: 100% 110vh;
+	height: 110vh;
+}
+
+#Form_Intro{
+	margin: 40vh auto auto 5vw;
+	line-height: 1.3;
+}
+
+#Form_form{
+	background-color: #F9EFFE;
+	border-radius: 20px;
+	height: 90vh;
+	width: 30vw;	
+	margin: 7vh auto auto 9vw;
+}
+#Form_form h4{
+	margin: 5vh auto 3vh;
+	width: 60%;
+	text-align: center;
+	line-height: 1.5;
+	font-size: 1.5vw;
+}
+#Form_form b{
+	color: #F49300;
+	font-weight: 500;
+} 
+#Form_form p{
+	color: #978888;
+} 
+.communication{
+	margin: 0 auto 20vh;
+	width: 90%;
+}
+.communication p{
+	font-size: 1.2vw;
+}
+#phone, #whatsapp, #viber, #telegram{
+	float: left;
+	margin: 0 .8vw;
+	display: center;
+	text-align: center;
+	width: 5vw;
+}
+.form_atribute{
+	border-bottom: 2px black;
+	border-bottom-color: black;
+	margin: 5px 10%;
+	width: 80%;
+}
+input{
+	background-color: #F9EFFE;
+	height: 5vh;
+	width: 100%;
+	border-bottom: 20px black;
+	color: #978888;
+	font-family: Rubik Light;
+	font-size: 1.2vw;
+	outline:none;
+}
+
+#form img{
+	width: 3vw;
+}
+
+#Form_form button{
+	background-color: #7B26AC;
+	border-radius: 10px;
+	height: 8%;
+	width: 70%;
+	margin: 8% 15%;	
+}
+
+#Form_form button h4{
+	margin: 0 auto;
+	color: white;
+	letter-spacing: .1vw;
 }
