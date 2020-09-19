@@ -15,7 +15,7 @@
 			<img id="logo1" src="images/logo_vectro.png" alt="logo_vectro" width: 90%; />
 		</div>
 		<div id="navbar">			
-				<button type="button" id="menu1"><a href="#courses"><p>Курсы</p></a></button>
+				<button type="button" id="menu1"><a href="#course_div"><p>Курсы</p></a></button>
 				<button type="button" id="menu2"><a href="#format"><p>Формат уроков</p></a></button>
 				<button type="button" id="menu3"><a><p>Педагоги</p></a></button>
 				<button id="menu4" ><a href="#reviews"><p>Отзывы</p></a></button>
@@ -28,7 +28,7 @@
 			<img id="main_img" src="images/main image.png" alt="logo_vectro" />
 		</div>
 		<button type="button" id="our_courses">
-			<h2><a href="#courses">Наши курсы</a></h2>
+			<h2><a href="#course_div">Наши курсы</a></h2>
 		</button>		
 	</div>
 	<div id="intro">
@@ -229,8 +229,121 @@
 				<h3>- Пройди тест и узнай прямо сейчас!</h3>
 			</div>
 		</div>
+		<div class="container" id="zatemnenie">
+			<div class="okno">
+				<div id="test_age">
+					<h3>Сколько лет ученику?</h3>
+					<input type="range" min="7" max="17" step="1" value="12">
+					<pre><p>7   8   9   10   11   12   13   14   15   16   17</p></pre>
+					<a href="#zatemnenie2" class="next_page">Дальше</a>
+				</div>				
+				<a href="#course_div" class="close">Закрыть окно</a>
+			</div>
+		</div>
+		<div class="container" id="zatemnenie2">
+			<div class="okno">
+				<div id="test_drawing">
+					<h3>Увлекаетесь рисованием?</h3>
+					<div id="inp1">
+					<input type="radio" name="Drawing" value="0">Нет<Br>
+					<input type="radio" name="Drawing" value="1">Скорее нет<Br>
+					<input type="radio" name="Drawing" value="2">Затрудняюсь ответить<Br>
+					<input type="radio" name="Drawing" value="3">Скорее да<Br>
+					<input type="radio" name="Drawing" value="4">Да<Br>
+					</div>
+					<a href="#zatemnenie" class="prev_page">Назад</a>
+					<a href="#zatemnenie3" class="next_page">Дальше</a>
+				</div>
+				
+				<a href="#course_div" class="close">Закрыть окно</a>
+			</div>
+		</div>
+		<!-- Насколько интересна вашего ребенку сфера робототехники? -->
+<!-- 0-10 -->
+
+<!-- Слышали от ребенка о создании собственных сайтов? -->
+<!-- нет-затрудняюсь-да -->
+
+<!-- Занимался раньше программированием? Если да, насколько продвинулся? -->
+<!-- 0-10 -->
+
+<!-- Насколько увлечен играми? -->
+<!-- 0-10 -->
+
+<!-- Интересна сфера защиты информации? -->
+<!-- 0-10 -->
+		<div class="container" id="zatemnenie3">
+			<div class="okno">
+				<div>
+					<h3>Интересна ли ребенку сфера робототехники?</h3>
+					<input type="range" min="0" max="10" step="1" value="1">
+					<pre><p>нет        затрудняюсь ответить        да</p></pre>
+					<a href="#zatemnenie2" class="prev_page">Назад</a>
+					<a href="#zatemnenie4" class="next_page">Дальше</a>
+				</div>				
+				<a href="#course_div" class="close">Закрыть окно</a>
+			</div>
+		</div>
+		<div class="container" id="zatemnenie4">
+			<div class="okno">
+				<div>
+					<h3>Слышали ли вы от ребенка о создании собственных сайтов?</h3>
+					<input type="range" min="0" max="2" step="1" value="1">
+					<pre><p>нет        затрудняюсь ответить        да</p></pre>
+					<a href="#zatemnenie3" class="prev_page">Назад</a>
+					<a href="#zatemnenie5" class="next_page">Дальше</a>
+				</div>				
+				<a href="#course_div" class="close">Закрыть окно</a>
+			</div>
+		</div>
+		<div class="container" id="zatemnenie5">
+			<div class="okno">
+				<div>
+					<h3>Занимался раньше программированием? Если да, насколько продвинулся?</h3>
+					<input type="range" min="0" max="2" step="1" value="1">
+					<pre><p>нет        затрудняюсь ответить        да</p></pre>
+					<a href="#zatemnenie4" class="prev_page">Назад</a>
+					<a href="#zatemnenie6" class="next_page">Дальше</a>
+				</div>				
+				<a href="#course_div" class="close">Закрыть окно</a>
+			</div>
+		</div>
+		<div class="container" id="zatemnenie6">
+			<div class="okno">
+				<div>
+					<h3>Насколько увлечен играми?</h3>
+					<input type="range" min="0" max="2" step="1" value="1">
+					<pre><p>нет        затрудняюсь ответить        да</p></pre>
+					<a href="#zatemnenie5" class="prev_page">Назад</a>
+					<a href="#zatemnenie7" class="next_page">Дальше</a>
+				</div>				
+				<a href="#course_div" class="close">Закрыть окно</a>
+			</div>
+		</div>
+		<div class="container" id="zatemnenie7">
+			<div class="okno">
+				<div>
+					<h3>Интересна сфера защиты информации?</h3>
+					<input type="range" min="0" max="2" step="1" value="1">
+					<pre><p>нет        затрудняюсь ответить        да</p></pre>
+					<a href="#zatemnenie6" class="prev_page">Назад</a>
+					<a href="#Itog" class="next_page">Дальше</a>
+				</div>				
+				<a href="#course_div" class="close">Закрыть окно</a>
+			</div>
+		</div>
+		<div class="container" id="Itog">
+			<div class="okno">
+				<div>
+					<h3>Ваша электронная почта, чтобы мы могли отправить вам результаты</h3>
+					<input type="email" placeholder="Электронная почта"></input>
+					<a href="" class="close">Отправить</a>
+				</div>
+			</div>
+		</div>
+		
 		<button class="button" type="button">
-			<h4>Пройти тест</h4>
+			<a href="#zatemnenie"><h4>Пройти тест</h4></a>
 		</button>
 	</div>
 	<div id="format">
@@ -299,21 +412,21 @@
 					<p>Telegram</p>
 				</div>
 			</div>
-			<div class="data">
+			<form class="data">
 				<div class="form_atribute">
-					<input type="text" value="Ваше имя"></input>
+					<input type="name" placeholder="Ваше имя"></input>
 				</div>
 				<div class="form_atribute">
-					<input type="text" value="Номер телефона"></input>
+					<input type="tel" maxlength="12" placeholder="Номер телефона"></input>
 				</div>
 				<div class="form_atribute">
-					<input type="text" value="Электронная почта"></input>
+					<input type="email" placeholder="Электронная почта"></input>
 				</div>
-			</div>
-			<button type="button" class="button">
-				<h4>Позвоните мне</h4>
-			</button>
-			<div>
+			</form>
+			<input type="submit" id="Phone_Me" value="Позвоните мне">
+				<!-- <h4>Позвоните мне</h4> -->
+			</input>
+			<div id="Persanal_Data">
 				<p>Нажимая на кнопку, вы даете <a href="URL">согласие на обработку персональных данных</a></p>
 			</div>
 		</div>
